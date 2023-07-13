@@ -1,3 +1,33 @@
 * {
-    background-color: gray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    gap : 5rem;
+    padding:10px 20px;
+}
+
+#content nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+#content nav a:hover {
+    background-color: #242424;
+}
+
+#content nav a:active {
+    background-color: #18181a;
 }
