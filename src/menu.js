@@ -19,7 +19,7 @@ export default function createMenu(){
         const menuCardText = document.createElement('p');
         menuCardText.textContent = 'lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.';
         const menuCardImage = document.createElement('img');
-        menuCardImage.src = 'https://images.unsplash.com/photo-1557683316-973673baf926';
+        menuCardImage.src = 'https://i.ibb.co/M8wrzJH/b1fiWRV.png';
         menuCardImage.alt = 'Some Tasty Food';
         menuCardImage.width = '500';
         menuCard.appendChild(menuCardTitle);

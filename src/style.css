@@ -48,6 +48,15 @@ body nav a:active {
     padding: 2rem;
 }
 
+.home-body h1 {
+    margin-bottom: 1rem;
+}
+
+.home-body p {
+    margin-bottom: 1rem;
+}
+
+
 .menu-body {
     display: flex;
     justify-content: center;
@@ -86,4 +95,36 @@ body nav a:active {
     .menu-container {
         grid-template-columns: repeat(1, minmax(100px, 1fr));
     }
+}
+
+.contact-body-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    height: 80vh;
+}
+
+.contact-body {
+    padding: 1.5rem 2rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact-body div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.contact-body div:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.contact-body h2 {
+    margin-bottom: 0.25rem;
 }

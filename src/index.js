@@ -1,6 +1,7 @@
 import './style.css';
 import createHome from './home.js';
 import createMenu from './menu.js';
+import createContact from './contact.js';
 (function(){
     const navbar = document.createElement('nav');
     const bodyContent = document.querySelector('#content');
@@ -28,6 +29,9 @@ import createMenu from './menu.js';
             }
             else if(link.textContent === 'Menu'){
                 bodyContent.appendChild(createMenu());
+            }
+            else if(link.textContent === 'Contact'){
+                bodyContent.appendChild(createContact());
             }
         })
     })
