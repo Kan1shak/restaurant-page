@@ -1,10 +1,11 @@
 import './style.css';
 import createHome from './home.js';
+import createMenu from './menu.js';
 (function(){
     const navbar = document.createElement('nav');
     const bodyContent = document.querySelector('#content');
     bodyContent.appendChild(createHome());
-    
+
     const home = document.createElement('a');
     const menu = document.createElement('a');
     const contact = document.createElement('a');
@@ -24,6 +25,9 @@ import createHome from './home.js';
             bodyContent.innerHTML = '';
             if(link.textContent === 'Home'){
                 bodyContent.appendChild(createHome());
+            }
+            else if(link.textContent === 'Menu'){
+                bodyContent.appendChild(createMenu());
             }
         })
     })
