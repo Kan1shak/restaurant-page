@@ -1,8 +1,10 @@
 import './style.css';
-
-const createNav = () => {
+import createHome from './home.js';
+(function(){
     const navbar = document.createElement('nav');
-
+    const bodyContent = document.querySelector('#content');
+    bodyContent.appendChild(createHome());
+    
     const home = document.createElement('a');
     const menu = document.createElement('a');
     const contact = document.createElement('a');
@@ -14,13 +16,15 @@ const createNav = () => {
     navbar.appendChild(home);
     navbar.appendChild(menu);
     navbar.appendChild(contact);
-    document.querySelector('#content').appendChild(navbar);
+    document.body.insertBefore(navbar, bodyContent);
 
-    document.querySelectorAll('nav > a').forEach((item)=> {
-        item.addEventListener('click', () =>{
+    document.querySelectorAll('nav > a').forEach((link)=> {
+        link.addEventListener('click', () =>{
             console.log('yes!');
+            bodyContent.innerHTML = '';
+            if(link.textContent === 'Home'){
+                bodyContent.appendChild(createHome());
+            }
         })
     })
-}
-
-createNav();
+})();
