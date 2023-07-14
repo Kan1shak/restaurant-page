@@ -6,14 +6,19 @@ export default function createHome(){
     homeBody.appendChild(homeTitle);
 
     const homeText = document.createElement('p');
-    homeText.textContent = 'lorem: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.';
+    homeText.textContent = 'Some catchy phrase about the restaurant.';
     homeBody.appendChild(homeText);
 
-    // const homeImage = document.createElement('img');
-    // homeImage.src = 'https://images.unsplash.com/photo-1557683316-973673baf926';
-    // homeImage.alt = 'Restaurant';
-    // homeImage.width = '300';
-    // homeBody.appendChild(homeImage);
+    const homeAbout = document.createElement('div');
+    homeAbout.classList.add('home-about');
+    const homeAboutTitle = document.createElement('h2');
+    homeAboutTitle.textContent = 'About Us';
+    const homeAboutText = document.createElement('p');
+    homeAboutText.textContent = 'Some really long description about the restaurant and how it is the best restaurant in the world. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum. dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.';
+    homeAbout.appendChild(homeAboutTitle);
+    homeAbout.appendChild(homeAboutText);
+    homeBody.appendChild(homeAbout);
+
     homeBody.classList.add('home-body');
     return homeBody;
 }

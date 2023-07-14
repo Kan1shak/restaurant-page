@@ -7,7 +7,7 @@ export default function createContact(){
     const contactAddressTitle = document.createElement('h2');
     contactAddressTitle.textContent = 'Address';
     const contactAddressText = document.createElement('p');
-    contactAddressText.textContent = '1234 Main St, Anytown, Some Country 12345';
+    contactAddressText.innerHTML = '1234 Main St<br>Anytown<br>SomeCountry 12345';
     contactAddressContainer.appendChild(contactAddressTitle);
     contactAddressContainer.appendChild(contactAddressText);
     contactBody.appendChild(contactAddressContainer);
@@ -16,7 +16,7 @@ export default function createContact(){
     const contactPhoneTitle = document.createElement('h2');
     contactPhoneTitle.textContent = 'Contact Us';
     const contactPhoneText = document.createElement('p');
-    contactPhoneText.innerHTML = 'Phone: 123-456-7890 <br> Email: someniceguy@company.com <br> Fax: 123-456-7890';
+    contactPhoneText.innerHTML = 'Phone: 123-456-7890 <br> Email: someniceguy@thisrestaurant.com <br> Fax: 123-456-7890';
     contactPhoneContainer.appendChild(contactPhoneTitle);
     contactPhoneContainer.appendChild(contactPhoneText);
     contactBody.appendChild(contactPhoneContainer);
