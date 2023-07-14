@@ -25,7 +25,7 @@ export default function createContact(){
     const contactHoursTitle = document.createElement('h2');
     contactHoursTitle.textContent = 'Hours';
     const contactHoursText = document.createElement('p');
-    contactHoursText.innerHTML = 'Monday - Friday: 9am - 5pm <br> Saturday: 10am - 4pm <br> Sunday: Closed';
+    contactHoursText.innerHTML = 'Monday - Friday: 9am - 5pm <br> Saturday: 9am - 7pm <br> Sunday: 9am - 9pm';
     contactHoursContainer.appendChild(contactHoursTitle);
     contactHoursContainer.appendChild(contactHoursText);
     contactBody.appendChild(contactHoursContainer);
